@@ -1,16 +1,13 @@
-$background : #ddd;
+@import '../../node_modules/bootstrap/scss/functions';
 
-html, body{
-  background: $background;
-  overflow: hidden;
-}
+@import 'variables';
 
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-}
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/utilities';
+
+@import 'hamburger';
+@import 'main';
