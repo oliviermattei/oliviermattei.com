@@ -32,13 +32,13 @@ module.exports = {
     },
     plugins: [
         new CopyWebpackPlugin([{ from: path.join(__dirname, "./src/views"), to: path.join(__dirname, "./dist") }]),
-        new HtmlWebpackPlugin({
-            alwaysWriteToDisk: true
-        }),
-        new BrowserSyncPlugin({
-            host: 'localhost',
-            port: 3000,
-            server: { baseDir: ['dist'] }
-        })
+        // new HtmlWebpackPlugin({
+        //     alwaysWriteToDisk: true
+        // }),
+        // new BrowserSyncPlugin({
+        //     host: 'localhost',
+        //     port: 3000,
+        //     server: { baseDir: ['dist'] }
+        // })
     ]
 };
