@@ -1,3 +1,10 @@
 @import "../../node_modules/bootstrap/scss/variables";
 
-$background : #fff;
+$background: $white;
+$font-color: $black;
+
+$window-padding: 20px;
+
+.gray-500{
+  color: $gray-500;
+}

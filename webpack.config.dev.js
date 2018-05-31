@@ -1,5 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
     entry: ['./src/main.js'],
@@ -29,6 +31,14 @@ module.exports = {
         open: true
     },
     plugins: [
-        new CopyWebpackPlugin([{ from: path.join(__dirname, "./src/views"), to: path.join(__dirname, "./dist") }])
+        new CopyWebpackPlugin([{ from: path.join(__dirname, "./src/views"), to: path.join(__dirname, "./dist") }]),
+        new HtmlWebpackPlugin({
+            alwaysWriteToDisk: true
+        }),
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: ['dist'] }
+        })
     ]
 };
