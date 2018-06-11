@@ -1,107 +1,89 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-
 @import '../../node_modules/bootstrap/scss/functions';
-
 @import 'variables';
-
 @import '../../node_modules/bootstrap/scss/mixins';
 @import '../../node_modules/bootstrap/scss/root';
 @import '../../node_modules/bootstrap/scss/reboot';
 @import '../../node_modules/bootstrap/scss/type';
 @import '../../node_modules/bootstrap/scss/grid';
 @import '../../node_modules/bootstrap/scss/utilities';
-
 @import 'hamburger';
+
 :root {
-  font-size: 10px;
-}
-html, body{
-  background: $background;
-  overflow: hidden;
-}
-body{
-  font-family: 'Open Sans', sans-serif;
-  color: $font-color;
-
-  line-height: 2rem;
-  text-align: justify;
+    font-size: 10px;
 }
 
-h1, h2{
-
-  margin-top: 260px;
-  font-size: 2.6rem;
-  font-weight: 400;
-
-  .filigram{
-    color: $gray-500;
-    font-size: 1.8rem;
-  }
-  .separator{
-    color: $gray-500;
-    font-size: 3.2rem;
-    font-weight: 300;
-  }
+html, body {
+    background: $background;
+    overflow: hidden;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color;
 
-.first-frame{
-  display: none;
-  padding: $window-padding;
-  .description{
-    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
 
-    margin-top: 80px;
-  }
+h1, h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
+
+    .filigram {
+        color: $gray-500;
+        font-size: 1.8rem;
+    }
+    .separator {
+        color: $gray-500;
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+}
+
+.first-frame {
+    display: none;
+    padding: $window-padding;
+    .description {
+        font-size: 1.2rem;
+
+        margin-top: 80px;
+    }
 
 }
 
-.work{
+.work {
+    top: 240px;
 
-    padding: 100px auto 100px auto;
-  position: relative;
-
-  .bevel{
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
+    position: relative;
+    padding: 10px 0 40px 0;
+    background: $gray-200;
     box-sizing: content-box;
     width: 100%;
-    height: 100px;
-    border: none;
     font: normal 100%/normal Arial, Helvetica, sans-serif;
-    background: $gray-200;
-    color: rgba(0,0,0,1);
     text-overflow: clip;
-    transform:    skewY(-10deg);
-    transform-origin: 100% 100% 0;
+    transform:    skewY(-5deg);
 
-    &.bottom{
-      bottom: 0;
-      top: auto;
+
+
+    .content {
+        transform:    skewY(5deg);
+        min-height: 100px;
+        padding: 0 20px;
     }
-  }
 
-  .container{
-    background: $gray-200;
-  }
-
-
-
-
-    h2{
+    h2 {
         text-align: right;
     }
 
 }
+
 canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
 }
