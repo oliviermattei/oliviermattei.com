@@ -31,7 +31,10 @@ module.exports = {
         open: true
     },
     plugins: [
-        new CopyWebpackPlugin([{ from: path.join(__dirname, "./src/views"), to: path.join(__dirname, "./dist") }]),
+        new CopyWebpackPlugin([
+            { from: path.join(__dirname, "./src/views"), to: path.join(__dirname, "./dist") },
+            { from: path.join(__dirname, "./src/images"), to: path.join(__dirname, "./dist/images") },
+        ]),
         // new HtmlWebpackPlugin({
         //     alwaysWriteToDisk: true
         // }),

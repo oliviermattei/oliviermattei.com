@@ -3,7 +3,12 @@
 $background: $white;
 $font-color: $black;
 
-$window-padding: 20px;
+$window-padding: 5vw;
+
+//work
+$clip-path: polygon(0 50px, 100% 0%, 100% calc(100% - 50px), 0 100%);
+$img-spacer: 6vw;
+$img-size: 60vw;
 
 .gray-500{
   color: $gray-500;
