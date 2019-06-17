@@ -1,13 +1,11 @@
 @import "variables";
 
-$height: 20px;
-
 nav.mobile {
-    width: $height * 1.25;
-    height: $height;
+    width: $menu-height * 1.25;
+    height: $menu-height;
     position: absolute;
-    left: $height;
-    top: $height;
+    right: 0;
+    top: ($header-height - $menu-height) / 2;
     transform: rotate(0deg);
     transition: .25s ease-in-out;
     cursor: pointer;
@@ -16,7 +14,7 @@ nav.mobile {
     & > span {
         display: block;
         position: absolute;
-        height: $height / 5;
+        height: $menu-height / 5;
         width: 100%;
         background: $black;
         //border-radius: 7px;
@@ -30,17 +28,17 @@ nav.mobile {
         }
 
         &:nth-child(2), &:nth-child(3) {
-            top: $height / 5 * 2;
+            top: $menu-height / 5 * 2;
         }
 
         &:nth-child(4) {
-            top: $height / 5 * 4;
+            top: $menu-height / 5 * 4;
         }
 
     }
     &.open {
         & > span:nth-child(1) {
-            top: $height;
+            top: $menu-height;
             width: 0;
             left: 50%;
         }
@@ -53,7 +51,7 @@ nav.mobile {
             transform: rotate(-45deg);
         }
         & > span:nth-child(4) {
-            top: $height;
+            top: $menu-height;
             width: 0;
             left: 50%;
         }
